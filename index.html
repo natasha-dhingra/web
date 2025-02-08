@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Villa Estate - Luxury Real Estate</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
 </head>
+
 <body>
     <!-- Header Section -->
     <header>
@@ -35,13 +38,37 @@
             </div>
         </section>
 
+        <section id="gallery" class="gallery">
+            <div class="section-header">
+                <span class="subtitle">| GALLERY</span>
+                <h2>Explore Our Property Gallery</h2>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811"
+                            alt="Property 1"></div>
+                    <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9"
+                            alt="Property 2"></div>
+                    <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+                            alt="Property 3"></div>
+                    <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf"
+                            alt="Property 4"></div>
+                    <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c"
+                            alt="Property 5"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
         <!-- Featured Properties Section -->
         <section id="featured" class="featured">
             <div class="section-header">
                 <span class="subtitle">| PROPERTIES</span>
                 <h2>We Provide The Best Property You Like</h2>
             </div>
-            
+
             <div class="property-grid">
                 <div class="property-card">
                     <div class="property-image">
@@ -124,11 +151,15 @@
 
         <!-- Video Section -->
         <section class="video-section">
-            <div class="video-content">
+            <div class="section-header">
                 <span class="subtitle">| VIDEO VIEW</span>
                 <h2>Get Closer View & Different Feeling</h2>
                 <div class="video-placeholder">
-                    <i class="fas fa-play"></i>
+                    <iframe width="100%" height="415"
+                        src="https://www.youtube.com/embed/6X3N1iTLGL0?si=kMGPvGKxeYrsGbjR" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
@@ -188,7 +219,8 @@
             </div>
             <div class="agents-grid">
                 <div class="agent-card">
-                    <img src="https://media.istockphoto.com/id/2147591349/photo/confident-businessman-working-at-the-office-and-smiling.webp?a=1&b=1&s=612x612&w=0&k=20&c=ua3FUMm1rHJswxkK7kOAgfkI9rCgEk9tOGeRIVLiX4M=" alt="Agent">
+                    <img src="https://media.istockphoto.com/id/2147591349/photo/confident-businessman-working-at-the-office-and-smiling.webp?a=1&b=1&s=612x612&w=0&k=20&c=ua3FUMm1rHJswxkK7kOAgfkI9rCgEk9tOGeRIVLiX4M="
+                        alt="Agent">
                     <div class="agent-info">
                         <h3>Michael Brown</h3>
                         <p>Real Estate Agent</p>
@@ -299,13 +331,9 @@
 
         <!-- Map Section -->
         <section class="map">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.2688796570255!2d-79.3871189!3d43.6426411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb2b5935bf09%3A0x8a175b0fa5854281!2sToronto%2C%20ON!5e0!3m2!1sen!2sca!4v1647893321951!5m2!1sen!2sca" 
-                width="100%" 
-                height="450" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.2688796570255!2d-79.3871189!3d43.6426411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb2b5935bf09%3A0x8a175b0fa5854281!2sToronto%2C%20ON!5e0!3m2!1sen!2sca!4v1647893321951!5m2!1sen!2sca"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
         </section>
     </main>
@@ -316,7 +344,8 @@
             <div class="footer-section">
                 <h3>VILLA</h3>
                 <p>Best Real Estate Agency</p>
-                <p class="footer-description">We are committed to providing our clients with exceptional service and the best luxury properties in Toronto.</p>
+                <p class="footer-description">We are committed to providing our clients with exceptional service and the
+                    best luxury properties in Toronto.</p>
             </div>
             <div class="footer-section">
                 <h4>Quick Links</h4>
@@ -348,4 +377,38 @@
         </div>
     </footer>
 </body>
+
+<!-- Include Swiper.js -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".swiper-container", {
+        loop: true,  // Enables infinite loop
+        autoplay: {
+            delay: 3000, // Auto slide every 3 seconds
+            disableOnInteraction: false, // Keep autoplay running even after user interaction
+        },
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        slidesPerView: 3, // Adjust this for more images per view
+        spaceBetween: 20,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 }
+        }
+    });
+</script>
+
+
 </html>
